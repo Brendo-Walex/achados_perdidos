@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0f8d24;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #0f8d24;
+}
+
+.form-section,
+.itens-section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0f8d24;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0f8d24;
+}
+
+.itens-lista {
+  list-style: none;
+}
+
+.itens-lista li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  font-size: 0.9em;
+}
+/*celular*/
+@media screen and (max-width: 600px) {
+  main{
+    background-color: #0f8d24;
+  }
+}
+/* tablet*/
+@media screen and (min-width:600px) {
+  main{
+    background-color: aqua;
+  }  
+}
+/*desktop*/
+@media screen and (min-width: 768px) {
+  main{
+    background-color: red;
+  }
+}
