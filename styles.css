@@ -96,6 +96,6 @@ footer {
 /*desktop*/
 @media screen and (min-width: 768px) {
   main{
-    background-color: red;
+    background-color: #0f8d24;
   }
 }
