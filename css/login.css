@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #bde8c2, #0f8d24);
+}
+
+/* Container */
+.login-container {
+    width: 100%;
+    max-width: 360px;
+    background: #024f0f;
+    border-radius: 12px;
+    border: 2px solid white;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    padding: 40px 28px;
+    animation: fadeIn 0.6s ease;
+    
+}
+
+/* Animação de entrada */
+fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Cabeçalho */
+.site-header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+img {
+    
+    border-radius: 8%;
+    max-width: 26%;
+  
+}
+
+.logo span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Título */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 28px;
+    color: white;
+    font-size: 1.8rem;
+}
+
+/* Labels */
+.login-container label {
+    display: block;
+    margin-bottom: 6px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Inputs */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.login-container input:focus {
+    box-shadow: 0 0 8px rgba(116, 185, 255, 0.5);
+    outline: none;
+}
+
+/* Botão */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #00cc66, #00b894);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-container button:hover {
+    background: linear-gradient(135deg, #0984e3, #74b9ff);
+    transform: scale(1.03);
+}
+
+/* Mensagem de erro */
+.login-container .error {
+    color: #d63031;
+    text-align: center;
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+div{
+    a{
+        color: #fff;
+    }
+}
