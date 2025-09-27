@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<select name="nome" id="nome" onmouseover="select(event)">
+    <option value="Ana">Ana</option>
+    <option value="walex">walex</option>
+    <option value="Pedro">Pedro</option>
+    <option value="João">João</option>
+</select>
+ <input type="text" id="input">
+
+
+<h1>Buscar endereço</h1>
+<label >cep:</label>
+<input type="text" id="cep" placeholder="digite o cep" maxlength="8">
+<button id= "buscarBtn" onclick="buscar()">Buscar</button>
+<h2>Endereço</h2>
+<p> <strong>Logradouro:</strong> <span id="logradouro"></span></p>
+<p> <strong>Bairro:</strong> <span id="bairro"></span></p>
+<p> <strong>Cidade:</strong> <span id="cidade"></span></p>
+<p> <strong>Estado:</strong> <span id="uf"></span></p>
+
+<script>
+  function buscarEndereco(cep) {
+    const url = 'https://viacwp.com.br/ws/${cep}/json/';
+    return fetch (url)
+    .then(Response=> {
+      if (!Response.ok) {
+        throw new error ("Erro ao buscar CEP!");
+      }
+      return Response.json();
+    })
+    .then(date => {
+      if (date.erro){
+        throw new error ("CEP não encontrado!");
+      }
+      return data;
+    });
+  }
+  function buscar(){
+    const cep = document.getElementById("cep").value;
+    if (cep.length !== 8) {
+      alert("Digite um CEPválido com 8 dígitos.");
+      return;
+    }
+    buscarEndereco(cep)
+    .then(data => {
+      document.getElementById("logradouro").innerHTML = data.logragouro;
+      document.getElementById("bairro").innerHTML = data.bairro;
+      document.getElementById("cidade").innerHTML = data.localidade;
+      document.getElementById("uf").innerHTML = data.uf;
+    })
+    .catch(error => {
+      alert(error.message);
+    });
+  };
+  document.getElementById("cep").addEventListener("keyup", (event) => {
+    if( cep.length >= 8){
+      buscar();
+    }
+  })
+</script>
+</body>
+</html>
