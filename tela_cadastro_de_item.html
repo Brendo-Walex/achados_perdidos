@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Item - Eu Perdi</title>
+  <link rel="stylesheet" href="css/css-reset.css">
+  <link rel="stylesheet" href="css/cadastro_item.css"/>
+  <link rel="stylesheet" href="js/cadastro_item.js">
+</head>
+<body>
+  <header>
+    <h1> <img src="img/logo_achado_e_perdidos.PNG" alt="logo"> Achou?achei!.com</h1>
+    <nav>
+    
+      <button>Lista Itens</button>
+      <button>Ver Solicitações</button>
+      <button>Ver Devolução</button>
+      <div class="user-info">IFTO <span class="user-circle">👤</span></div>
+    </nav>
+  </header>
+
+  <main>
+    <form class="formulario">
+      <div class="campo">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" />
+      </div>
+
+      <div class="campo">
+        <label for="categoria">Categoria</label>
+        <select id="categoria">
+          <option>Artigos Esportivos</option>
+          <option>Eletrônicos</option>
+          <option>Documentos</option>
+          <option>Outros</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="descricao">Descrição</label>
+        <textarea id="descricao" rows="3"></textarea>
+      </div>
+
+      <div class="imagem-cor">
+        <div class="campo">
+          <label for="imagem">Foto do Item</label>
+          <input type="file" id="imagem" />
+        </div>
+
+        <div class="campo">
+          <label for="cor">Cor Predominante</label>
+          <select id="cor">
+            <option>Preto</option>
+            <option>Vermelho</option>
+            <option>Azul</option>
+            <option>Branco</option>
+            <option>Cinza</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="imagem-preview">
+        <img src="img/mochila_preta.webp" alt="Prévia da imagem" />
+      </div>
+
+      <div class="campo-duplo">
+        <div class="campo">
+          <label for="data">Data</label>
+          <input type="date" id="data" />
+        </div>
+        <div class="campo">
+          <label for="hora">Horário (aproximadamente)</label>
+          <input type="time" id="hora" />
+        </div>
+      </div>
+
+      <div class="campo">
+        <label for="pergunta">Faça uma pergunta específica para o item (opcional)</label>
+        <input type="text" id="pergunta" placeholder="Ex: Qual o papel de parede do telefone?" />
+      </div>
+
+      <div class="campo">
+        <label for="achador">Nome de quem achou</label>
+        <input type="text" id="achador" />
+      </div>
+
+      <div class="botoes">
+        <button type="submit" class="editar">Editar</button>
+        <button type="button" class="devolver">Cadastrar</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

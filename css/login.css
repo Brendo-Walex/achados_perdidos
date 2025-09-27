@@ -106,7 +106,7 @@ img {
 }
 
 .login-container button:hover {
-    background: linear-gradient(135deg, #0984e3, #74b9ff);
+    background: linear-gradient(135deg, #79cc89);
     transform: scale(1.03);
 }
 

@@ -1,0 +1,157 @@
+@import url(header.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #43c152, #0f8d24);
+  background-color: #0f8d24;
+  color: white;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+nav button {
+  color: white;
+  background-color: #024f0f;
+  border: 2px solid white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  
+}
+
+nav button:hover {
+  background-color: #dbe3eb;
+  
+}
+
+.user-info {
+  margin-left: auto;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+main {
+  background-color: #024f0f;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid white;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #024f0f;
+ 
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  
+}
+
+.campo textarea {
+  resize: vertical;
+}
+
+.imagem-cor {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.imagem-preview {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.imagem-preview img {
+  max-width: 150px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.campo-duplo {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.botoes {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 20px;
+  
+  
+}
+
+.editar {
+  background-color: #0f8d24;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.devolver {
+  background-color: #0f8d24;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.editar:hover {
+  background-color: #79cc89;
+}
+
+.devolver:hover {
+  background-color: #79cc89;
+}
+img {
+    border-radius: 8%;
+    max-width: 26%;
+}
