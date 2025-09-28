@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Devoluções</title>
+  <link rel="stylesheet" href="css/tela_devolucao.css">
+</head>
+<body>
+  <!-- TOPO -->
+  <header class="topo">
+    <div class="topo-inner">
+      <div class="marca">
+        <h1> <img src="img/logo_achado_e_perdidos.PNG" alt="logo"> Achou?achei!.com</h1>
+    </div>
+      <div class="usuario">
+        <button class="btn-usuario">Olá IFTO 👤</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <!-- BOTOES -->
+    <section class="acoes">
+      <button class="btn btn-outline">+ Cadastrar Item</button>
+      <button class="btn btn-outline">☰ Lista Itens</button>
+      <button class="btn btn-outline">👁 Ver Solicitações</button>
+    </section>
+
+    <!-- BUSCA -->
+    <section class="painel-busca">
+      <div class="linha-filtros">
+        <select id="filtro">
+          <option>Todos</option>
+          <option>Carteira</option>
+          <option>Chaveiro</option>
+          <option>Mochila</option>
+          <option>Óculos</option>
+        </select>
+
+        <div class="search">
+          <input type="search" id="campo-busca" placeholder="Pesquise um item aqui">
+          <button class="btn-pesquisar" id="btnBuscar">🔍</button>
+        </div>
+      </div>
+
+      <div class="campus-info">Devolução em IFTO Campus - Colinas</div>
+    </section>
+
+    <!-- LISTA DE ITENS DEVOLVIDOS -->
+    <section class="lista" id="listaItens">
+      <!-- ITEM 1 -->
+      <article class="cartao">
+        <div class="cartao-left">
+          <img src="img/carteira_marrom.webp" alt="Carteira">
+        </div>
+        <div class="cartao-right">
+          <h3>Devolvido para <strong>Jose de Sousa</strong></h3>
+          <p><strong>No dia:</strong> 28 de Setembro</p>
+          <p>jose2018@gmail.com | (63) 99200-0000</p>
+          <p>18143535534</p>
+          <p>25/01/1998</p>
+
+          <h4 class="titulo-item">Carteira marrom</h4>
+          <p class="campus">IFTO Campus - Colinas</p>
+          <p>No dia <span class="data-destaque">28 de Setembro</span></p>
+
+          <div class="status verde">Dados conferidos ✔</div>
+        </div>
+      </article>
+
+      <!-- ITEM 2 -->
+      <article class="cartao">
+        <div class="cartao-left">
+          <img src="img/chaveiro_azul.jpg" alt="Chaveiro">
+        </div>
+        <div class="cartao-right">
+          <h3>Devolvido para <strong>Joana da Silva</strong></h3>
+          <p><strong>No dia:</strong> 27 de Março</p>
+          <p>joana123@gmail.com | (63) 99211-1111</p>
+          <p>18143235534</p>
+          <p>27/08/2003</p>
+
+          <h4 class="titulo-item">chaveiro azul</h4>
+          <p class="campus">IFTO Campus - Colinas</p>
+          <p>No dia <span class="data-destaque">29 de Setembro</span></p>
+
+          <div class="status amarelo">Devolvido sem ser reclamado ⚠</div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+
+</body>
+</html>
