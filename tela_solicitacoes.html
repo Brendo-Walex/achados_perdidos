@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Solicitações de itens</title>
+  <link rel="stylesheet" href="css/tela_solicitacoes.css" />
+</head>
+<body>
+  <!-- TOPO -->
+  <header class="topo">
+    <div class="topo-inner">
+      <div class="marca">
+        <h1> <img src="img/logo_achado_e_perdidos.PNG" alt="logo"> Achou?achei!.com</h1>
+      </div>
+      <div class="usuario">
+        <button class="btn-usuario">Olá IFTO <span class="avatar">👤</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <!-- BOTOES AÇÕES -->
+    <section class="acoes">
+      <button class="btn btn-outline">+ Cadastrar Item</button>
+      <button class="btn btn-outline">☰ Lista Itens</button>
+      <button class="btn btn-outline">↩ Ver Devolução</button>
+    </section>
+
+    <!-- PAINEL DE BUSCA / FILTROS -->
+    <section class="painel-busca">
+      <div class="linha-filtros">
+        <select id="filtro">
+          <option>Todos</option>
+          <option>Carteira</option>
+          <option>Chaveiro</option>
+          <option>Óculos</option>
+        </select>
+
+        <div class="search">
+          <input type="search" placeholder="Pesquise um item aqui" />
+          <button class="btn-pesquisar" aria-label="Pesquisar">🔍</button>
+        </div>
+      </div>
+
+      <div class="campus-info">Solicitações em IFTO Campus - Colinas</div>
+    </section>
+
+    <!-- LISTA / CARTÃO -->
+    <section class="lista">
+      <article class="cartao">
+        <div class="cartao-left">
+          <img src="img/carteira_marrom.webp" alt="Carteira" />
+        </div>
+
+        <div class="cartao-right">
+          <div class="solicitante">
+            <div class="label-solicitado">Solicitado por <strong>Jose de Sousa</strong></div>
+            <div class="contato email">jose2018@gmail.com</div>
+            <div class="contato celular">(63) 99200-0000</div>
+            <div class="contato dtnasc">25/01/1998</div>
+          </div>
+
+          <p class="descricao">
+            Perdi esta carteira marrom na entrada da instituição, provavelmente caiu do meu bolso e foi encontrado no chão.
+          </p>
+
+          <div class="acoes-cartao">
+            <button class="btn-pequeno">Ver Anexo</button>
+          </div>
+
+          <div class="info-item">
+            <h3 class="titulo-item">Carteira marrom</h3>
+            <div class="campus">IFTO Campus - Colinas</div>
+            <div class="data">No dia <span class="data-destaque">25 de Setembro</span></div>
+          </div>
+
+          <div class="pergunta">
+            <strong>“Quais documentos estavam dentro da carteira?”</strong>
+            <div class="resposta">CNH,RG,CPF e a Carteira de estudade.</div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
