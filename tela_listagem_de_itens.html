@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eu Perdi.com</title>
+  <link rel="stylesheet" href="css/tela_listagem_de_itens.css" />
+  <link rel="stylesheet" href="js/listagem_itens.js">
+</head>
+<body>
+  <!-- Barra superior -->
+  <header class="topo">
+    <div class="topo-esquerda">
+      <h1> <img src="img/logo_achado_e_perdidos.PNG" alt="logo"> Achou?achei!.com</h1>
+    </div>
+    <div class="topo-direita">
+      <div class="usuario">Olá IFTO <span class="usuario-icone">👤</span></div>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <!-- Botões principais -->
+    <section class="acoes">
+      <button class="btn btn-borda" id="btn-cadastrar">+ Cadastrar Item</button>
+      <button class="btn btn-borda" id="btn-solicitacoes">👁 Ver Solicitações</button>
+      <button class="btn btn-borda" id="btn-devolucao">↩ Ver Devolução</button>
+    </section>
+
+    <!-- Busca e filtros -->
+    <section class="busca-area">
+      <div class="busca-esquerda">
+        <div class="select">
+          <select id="filtroCategoria">
+            <option value="todos">Todos</option>
+            <option value="carteira">Carteira</option>
+            <option value="chaveiro">Chaveiro</option>
+            <option value="mochila">Mochila</option>
+            <option value="óculos">Óculos</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <input id="campoBusca" type="search" placeholder="Pesquise um item aqui" />
+      </div>
+      <button id="btnBuscar" class="btn-busca">🔎</button>
+    </section>
+
+    <p class="resultado-info">3 itens encontrados em IFTO Campus - Colinas</p>
+
+    <!-- Lista de cartões -->
+    <section id="gradeItens" class="grade">
+      <!-- Item 1 -->
+      <article class="cartao" data-titulo="Carteira" data-categoria="carteira">
+        <div class="cartao-esquerda">
+          <img src="img/carteira_marrom.webp" alt="Carteira" />
+        </div>
+        <div class="cartao-direita">
+          <h3>Carteira</h3>
+          <p class="local">📍 IFTO Campus - Colinas</p>
+          <p>No dia <strong>25 de Setembro</strong></p>
+          <p>Código <strong>123</strong></p>
+          <p class="guardado">Guardado há <strong>08 dias</strong></p>
+        </div>
+      </article>
+
+      <!-- Item 2 -->
+      <article class="cartao" data-titulo="Óculos" data-categoria="óculos">
+        <div class="cartao-esquerda">
+          <img src="img/Óculos_grau.webp" alt="Óculos" />
+        </div>
+        <div class="cartao-direita">
+          <h3>Óculos </h3>
+          <p class="local">📍 IFTO Campus - Colinas</p>
+          <p>No dia <strong>26 de Setembro</strong></p>
+          <p>Código <strong>12</strong></p>
+          <p class="guardado">Guardado há <strong>07 dias</strong></p>
+        </div>
+      </article>
+
+      <!-- Item 3 -->
+      <article class="cartao" data-titulo="Chaveiro" data-categoria="chaveiro">
+        <div class="cartao-esquerda">
+          <img src="img/chaveiro_azul.jpg" alt="Chaveiro" />
+        </div>
+        <div class="cartao-direita">
+          <h3>Chaveiro</h3>
+          <p class="local">📍 IFTO Campus - Colinas</p>
+          <p>No dia <strong>27 de Setembro</strong></p>
+          <p>Código <strong>23</strong></p>
+          <p class="guardado">Guardado há <strong>06 dias</strong></p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+</body>
+</html>

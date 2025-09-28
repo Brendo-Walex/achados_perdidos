@@ -1,0 +1,183 @@
+@import url(header.css);
+@import url(Responsivo.css);
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#0f8d24;
+  color:white;
+}
+
+
+/* Topo */
+.topo{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#0f8d24;
+  padding:15px 20px;
+  border-bottom:2px solid #dfe5e8;
+}
+
+.topo-esquerda{
+  display:flex;
+  align-items:center;gap:20px;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  background:none;
+  border:none;
+  font-weight:700;
+  font-size:18px;
+}
+
+.menu{
+  display:flex;
+  gap:15px;
+  font-weight:600;
+}
+
+.usuario{
+  background:#0f8d24;
+  padding:6px 12px;
+  border-radius:20px;
+  font-weight:600;
+}
+
+/* Conteúdo */
+.conteudo{
+  max-width:900px;
+  margin:20px auto;
+  padding:0 15px;
+  background-color: #024f0f;
+  border: 2px solid white;
+}
+
+/* Ações */
+.acoes{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:15px;
+}
+
+.btn{
+  padding:8px 14px;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.btn-principal{
+  background:#024f0f ;
+  color:white;
+  border:none;
+}
+
+.btn-borda{
+  background:#024f0f;
+  border-radius: 8px;
+  border: 2px solid white;
+  color: white;
+}
+
+.ativo{
+  background:#79cc89;
+  color:white;
+}
+
+/* Busca */
+.busca-area{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:#024f0f;
+  padding:10px;
+  border-radius:6px;
+  margin-bottom:15px;
+}
+
+.busca-esquerda{
+  flex:1;
+  display:flex;
+  gap:10px;
+}
+
+select, #campoBusca{
+  padding:8px;
+  border-radius:6px;
+  border:1px solid #bfcfd2;
+}
+
+#campoBusca{
+  flex:1;
+}
+
+.btn-busca{
+  background:#2bc36b;
+  padding:8px 12px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:700;
+}
+
+/* Resultado */
+.resultado-info{
+  margin:10px 0;
+  font-weight:600;
+  color:white;
+}
+
+/* Grade */
+.grade{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+}
+
+.cartao{
+  display:flex;
+  gap:12px;
+  background:#79cc89;
+  padding:12px;
+  border-radius:8px;
+  border:1px solid white;
+}
+
+.cartao-esquerda img{
+  width:120px;
+  height:90px;
+  object-fit:cover;
+  border-radius:6px;
+}
+
+.cartao-direita h3{
+  font-size:18px;
+  margin: bottom 0;
+  
+}
+
+.local{
+  font-weight:600;
+}
+
+.cartao-direita p{
+  font-size:14px;
+  color:white;
+  margin:3px 0;
+}
+
+
+img {
+    border-radius: 8%;
+    max-width: 26%;
+}
