@@ -114,7 +114,7 @@ body {
 }
 
 .btn-principal { 
-    background:#024f0f
+    background:#024f0f;
     color:#fff;
 }
 
@@ -162,17 +162,17 @@ body {
   padding:10px 12px; 
   border:1px solid #cfdbe2; 
   border-radius:0 6px 6px 0; 
-  background:#22b86b; c
-  olor:#fff; 
+  background:#22b86b; 
+  color:#fff; 
   font-weight:700; 
   cursor:pointer;
 }
 
 .campus-info { 
-    margin-top:10px; 
-    color:white; 
-    font-weight:600;
-    background-color: #024f0f; 
+  margin-top:10px; 
+  color:white; 
+  font-weight:600;
+  background-color: #024f0f; 
 }
 
 /* LISTA / CARTÃO */
@@ -305,7 +305,7 @@ body {
 
 img {
     border-radius: 8%;
-    max-width: 26%;
+    max-width: 40%;
 }
 
 /* RESPONSIVO */
