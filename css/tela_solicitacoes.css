@@ -6,10 +6,6 @@
     background: #0f8d24;
 }
 
-html,body {
-    height: 100%;
-    background: #0f8d24; 
-}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -80,6 +76,8 @@ body {
   padding:6px 12px;
   border-radius:20px;
   font-weight:600;
+  border: none;
+  color: white;
 }
 
 /* CONTEÚDO */
@@ -111,11 +109,13 @@ body {
     background:#024f0f; 
     border-color:#024f0f;
     color: white;
+    border:1px solid white; 
 }
 
 .btn-principal { 
     background:#024f0f;
     color:#fff;
+    border-color: ;
 }
 
 /* PAINEL DE BUSCA */
