@@ -8,8 +8,7 @@
 }
 
 body {
-  background: linear-gradient(135deg, #43c152, #0f8d24);
-  background-color: #0f8d24;
+  background-color: rgb(166, 235, 166);
   color: white;
   padding: 20px;
 }
@@ -19,11 +18,13 @@ header {
   flex-direction: column;
   margin-bottom: 20px;
   border-bottom:2px solid #dfe5e8;
+  background-color: rgb(166, 235, 166);
 }
 
 header h1 {
   font-size: 24px;
   margin-bottom: 10px;
+  background-color: rgb(166, 235, 166);
 }
 
 nav {

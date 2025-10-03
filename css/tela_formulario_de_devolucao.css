@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #0f8d24;
+  background-color: rgb(166, 235, 166);
   color: white;
   h3{
     background-color: #024f0f;
@@ -15,9 +15,7 @@
   p{
     background-color: #024f0f;
   }
-  div {
-    background-color: #0f8d24;
-  }
+
   strong{
     background-color: #024f0f;
   }
@@ -30,7 +28,7 @@ body {
 }
 
 header {
-  background-color: #0f8d24;
+background-color: rgb(166, 235, 166);
   padding: 10px 30px;
   border-bottom: 1px solid #ccc;
 }
@@ -70,6 +68,7 @@ main {
   display: flex;
   justify-content: center;
   padding: 40px 20px;
+  background-color: rgb(166, 235, 166);
 }
 
 .formulario-container {
@@ -143,7 +142,7 @@ img {
   
 }
 .btn-usuario {
-  background:#0f8d24;;
+  background-color: rgb(166, 235, 166);
   border:none;
   padding:8px 12px;
   border-radius:20px;

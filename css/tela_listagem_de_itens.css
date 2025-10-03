@@ -9,7 +9,7 @@
 }
 
 body{
-  background:#0f8d24;
+  background-color: rgb(166, 235, 166);
   color:white;
 }
 
@@ -19,7 +19,7 @@ body{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  background:#0f8d24;
+  background-color: rgb(166, 235, 166);
   padding:15px 20px;
   border-bottom:2px solid #dfe5e8;
 }
@@ -46,10 +46,13 @@ body{
 }
 
 .usuario{
-  background:#0f8d24;
-  padding:6px 12px;
+  background-color: rgb(166, 235, 166);
+  border:none;
+  padding:8px 12px;
   border-radius:20px;
-  font-weight:600;
+  font-weight:700;
+  cursor:pointer;
+  color: white;
 }
 
 /* Conteúdo */
@@ -67,13 +70,14 @@ body{
   gap:10px;
   flex-wrap:wrap;
   margin-bottom:15px;
+  justify-content:center;
 }
 
 .btn{
   padding:8px 14px;
   border-radius:6px;
   cursor:pointer;
-  font-weight:600;
+  font-weight:700;
 }
 
 .btn-principal{

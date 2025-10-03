@@ -7,7 +7,7 @@
 }
 
 header {
-  background-color: #0f8d24;
+  background-color: rgb(166, 235, 166);
   color: white;
   text-align: center;
   border-bottom:2px solid #dfe5e8;
@@ -88,7 +88,7 @@ body {
   justify-content: center;
   padding: 20px;
   gap: 20px;
-  background-color: #0f8d24;
+  background-color: rgb(166, 235, 166);
 }
 
 .item {

@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #bde8c2, #0f8d24);
+   background-color: rgb(166, 235, 166);
 }
 
 /* Container */

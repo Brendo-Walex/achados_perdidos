@@ -1,25 +1,23 @@
 @import url(Responsivo.css);
+@import url(css_layot.css);
 * {
   margin:0;
   padding:0;
   box-sizing:border-box;
   h1{
-    background-color: #0f8d24;
-  }
-  img{
-    background-color: #0f8d24;
+    background-color: rgb(166, 235, 166);
   }
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background:#0f8d24;
+  background-color: rgb(166, 235, 166);
   color:white;
 }
 
 /*CABEÇALHO (TOPO)*/
 .topo {
-  background:#0f8d24;
+  background-color: rgb(166, 235, 166);
   border-bottom:1px solid #ddd;
   padding:14px 0;
 }
@@ -31,7 +29,7 @@ body {
   display:flex;
   justify-content:space-between;
   align-items:center;
-  background-color: #0f8d24;
+  background-color: rgb(166, 235, 166);
 }
 
 .marca {
@@ -53,21 +51,25 @@ body {
 }
 
 .btn-usuario {
-  background:#0f8d24;;
+  background-color: rgb(166, 235, 166);
   border:none;
   padding:8px 12px;
   border-radius:20px;
   font-weight:700;
   cursor:pointer;
+  color: white;
 
 }
 
-
+main.conteudo{
+   background-color: rgb(166, 235, 166);
+  }
 /*CONTEÚDO PRINCIPAL*/
 .conteudo {
   width:92%;
   max-width:1100px;
   margin:20px auto;
+  
 }
 
 /* BOTÕES DE AÇÃO*/
@@ -76,7 +78,7 @@ body {
   gap:10px;
   margin-bottom:15px;
   flex-wrap:wrap;
-  background-color: #0f8d24;
+  background-color: rgb(166, 235, 166);
 }
 
 .btn {
@@ -87,7 +89,7 @@ body {
 }
 
 .btn-outline {
-  background:#024f0f;;
+  background:#024f0f;
   border:1px solid #ccc;
   color: white;
 }
@@ -143,7 +145,7 @@ select {
   margin-top:10px;
   font-weight:600;
   color:white;
-  background-color: #024f0f;
+  background-color: linear-gradient(135deg, #bde8c2, #0f8d24);
 }
 
 /* LISTA DE DEVOLUÇÕES*/
@@ -151,7 +153,7 @@ select {
   display:flex;
   flex-direction:column;
   gap:16px;
-  background-color: #024f0f;
+  background-color: linear-gradient(135deg, #bde8c2, #0f8d24);
 }
 .cartao {
   background:#024f0f;
@@ -160,18 +162,18 @@ select {
   padding:14px;
   display:flex;
   gap:14px;
-  background-color: #024f0f;
+  background-color: linear-gradient(135deg, #bde8c2, #0f8d24);
 }
 .cartao-left img {
   border-radius:6px;
-  background-color: #024f0f;
+  background-color: linear-gradient(135deg, #bde8c2, #0f8d24);
  
 }
 .cartao-right {
   display:flex;
   flex-direction:column;
   gap:6px;
-  background-color: #024f0f;
+  background-color: linear-gradient(135deg, #bde8c2, #0f8d24);
   
 }
 .titulo-item {
@@ -179,17 +181,17 @@ select {
   font-weight:800;
   margin-top:6px;
   color:white;
-  background-color: #024f0f;
+  background-color: linear-gradient(135deg, #bde8c2, #0f8d24);
 }
 .campus {
   font-weight:700;
   color:white;
-  background-color: #024f0f;
+  background-color: linear-gradient(135deg, #bde8c2, #0f8d24);
 }
 .data-destaque {
   color:white;
   font-weight:700;
-  background-color: #024f0f;
+  background-color: linear-gradient(135deg, #bde8c2, #0f8d24);
 }
 
 /*STATUS DAS DEVOLUÇÕES*/
