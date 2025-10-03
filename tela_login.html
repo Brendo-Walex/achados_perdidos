@@ -11,7 +11,7 @@
   <header class="site-header">
     <div class="logo">
       <img src="img/logo.png" alt="Logo do site">
-      <span>Achou? Achei!.com</span>
+      <span>Achou?Achei.com</span>
     </div>
   </header>
   <div class="login-container">
@@ -25,12 +25,18 @@
       <label for="password">Senha</label>
       <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
 
-      <button type="entrar">Entrar</button>
-      <a id="entrar" href="tela_cadastro_de_item.html">entrar</a>
+  <button onclick="irParateladecadastro()">Entrar</button>
+
+
     </form>
     <div class="extra-links">
       <a href="#">Esqueci minha senha</a>
     </div>
-  </div>
+  </div> 
+   <script>
+    function irParateladecadastro() {
+    window.location.href = "tela_cadastro_de_item.html";
+  }
+  </script>
 </body>
 </html>
