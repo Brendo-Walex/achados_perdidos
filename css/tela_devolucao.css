@@ -1,5 +1,4 @@
 @import url(Responsivo.css);
-@import url(css_layot.css);
 * {
   margin:0;
   padding:0;
@@ -67,7 +66,7 @@ main.conteudo{
 /*CONTEÚDO PRINCIPAL*/
 .conteudo {
   width:92%;
-  max-width:1100px;
+  max-width:100%;
   margin:20px auto;
   
 }
@@ -146,6 +145,7 @@ select {
   font-weight:600;
   color:white;
   background-color: linear-gradient(135deg, #bde8c2, #0f8d24);
+  
 }
 
 /* LISTA DE DEVOLUÇÕES*/
@@ -163,19 +163,9 @@ select {
   display:flex;
   gap:14px;
   background-color: linear-gradient(135deg, #bde8c2, #0f8d24);
+
 }
-.cartao-left img {
-  border-radius:6px;
-  background-color: linear-gradient(135deg, #bde8c2, #0f8d24);
- 
-}
-.cartao-right {
-  display:flex;
-  flex-direction:column;
-  gap:6px;
-  background-color: linear-gradient(135deg, #bde8c2, #0f8d24);
-  
-}
+
 .titulo-item {
   font-size:18px;
   font-weight:800;
@@ -215,6 +205,10 @@ select {
 }
 
 img {
-    border-radius: 8%;
-    max-width: 40%;
+    border-radius: 6%;
+    max-width: 30%;
+}
+div.cartao-left{
+  max-width: 58%;
+  
 }

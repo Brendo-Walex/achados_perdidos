@@ -20,14 +20,12 @@ header {
 }
 
 
-  nav {
-    ul {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      padding-top: 200PX
-    }
-  }
+nav {
+ul {
+display: flex;
+padding-top: 200px;
+}
+}
 
 body {
   background-color: #f4f4f4;

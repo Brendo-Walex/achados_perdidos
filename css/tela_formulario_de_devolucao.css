@@ -76,7 +76,7 @@ main {
   padding: 30px;
   border-radius: 10px;
   width: 100%;
-  max-width: 500px;
+  max-width: 100%;
 }
 
 .item-encontrado {

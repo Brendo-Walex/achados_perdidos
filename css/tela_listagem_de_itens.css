@@ -57,9 +57,9 @@ body{
 
 /* Conteúdo */
 .conteudo{
-  max-width:900px;
-  margin:20px auto;
-  padding:0 15px;
+  max-width:100%;
+  margin:20px;
+  padding:15px;
   background-color: #024f0f;
   border: 2px solid white;
 }
@@ -67,10 +67,12 @@ body{
 /* Ações */
 .acoes{
   display:flex;
+  max-width: 100%;
   gap:10px;
   flex-wrap:wrap;
   margin-bottom:15px;
-  justify-content:center;
+  justify-content: left;
+  margin:20px;
 }
 
 .btn{
@@ -107,6 +109,7 @@ body{
   padding:10px;
   border-radius:6px;
   margin-bottom:15px;
+  max-width: 80%;
 }
 
 .busca-esquerda{
@@ -132,6 +135,7 @@ select, #campoBusca{
   border-radius:6px;
   cursor:pointer;
   font-weight:700;
+  max-width: 20%;
 }
 
 /* Resultado */
@@ -167,6 +171,7 @@ select, #campoBusca{
 .cartao-direita h3{
   font-size:18px;
   margin: bottom 0;
+  max-width: 20%;
   
 }
 
@@ -183,5 +188,5 @@ select, #campoBusca{
 
 img {
     border-radius: 8%;
-    max-width: 40%;
+    max-width: 80%;
 }

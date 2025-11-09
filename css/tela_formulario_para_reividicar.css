@@ -41,15 +41,6 @@ nav a {
   
 }
 
-nav button {
-  padding: 5px 15px;
-  background-color: rgb(166, 235, 166);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  color: white;
-}
-
 main {
   display: flex;
   justify-content: center;
@@ -62,7 +53,7 @@ main {
   padding: 30px;
   border-radius: 10px;
   width: 100%;
-  max-width: 600px;
+  max-width: 100%;
 }
 
 .item-encontrado {
@@ -122,21 +113,25 @@ form textarea {
   background-color: white;
   color: black;
 }
+.duplo input {
+  width: 100%;
+}
 
 .duplo {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 15px;
   flex-wrap: wrap;
   background-color: #024f0f;
-  
 }
 
 .duplo div {
   flex: 1;
-  min-width: 180px;
+  min-width: 220px;
   background-color: #024f0f;
-
 }
+
 
 form button {
   background-color: #0dbd51;
