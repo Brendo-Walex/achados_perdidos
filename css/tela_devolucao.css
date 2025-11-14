@@ -49,16 +49,6 @@ body {
   color:#2a4452;
 }
 
-.btn-usuario {
-  background-color: rgb(166, 235, 166);
-  border:none;
-  padding:8px 12px;
-  border-radius:20px;
-  font-weight:700;
-  cursor:pointer;
-  color: white;
-
-}
 
 main.conteudo{
    background-color: rgb(166, 235, 166);
@@ -182,26 +172,6 @@ select {
   color:white;
   font-weight:700;
   background-color: linear-gradient(135deg, #bde8c2, #0f8d24);
-}
-
-/*STATUS DAS DEVOLUÇÕES*/
-.status {
-  margin-top:6px;
-  font-weight:700;
-  padding:6px;
-  border-radius:6px;
-  display:inline-block;
-  background-color: #024f0f;
-}
-
-.status.verde {
-  background:#e6f7ec;
-  color:#237a3a;
-}
-
-.status.amarelo {
-  background:#fff3d4;
-  color:#a97400;
 }
 
 img {

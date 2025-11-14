@@ -73,7 +73,7 @@ main {
   display: flex;
   justify-content: center;
   padding: 40px 20px;
-  background:rgb(166, 235, 166)
+  background:rgb(166, 235, 166);
 }
 
 .formulario-container {
@@ -162,18 +162,22 @@ form textarea {
 
 
 form button {
-  background-color: #0dbd51;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+ form button{
+  margin-left: auto;
+  background-color: #0f8d24;
   color: white;
-  border: none;
-  padding: 12px;
-  font-weight: bold;
+  padding: 10px 18px;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  border: 2px solid white;
+  
 }
 
 form button:hover {
-  background-color: #0a9441;
+  background-color: #79cc89;
 }
 
 img {

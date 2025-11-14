@@ -34,22 +34,6 @@ body {
   gap:12px;
 }
 
-.icone {
-    
-     padding:8px; 
-     border-radius:8px; 
-}
-
-.nome { 
-    font-size:18px; 
-}
-
-.dot { 
-    color:white; 
-    font-weight:600; 
-    margin-left:3px; 
-}
-
 .nav-principal { 
     display:flex; 
     gap:20px; 
@@ -61,16 +45,6 @@ body {
     font-weight:600; 
     opacity:0.9; 
 }
-
-.usuario .btn-usuario {
-  background-color: rgb(166, 235, 166);
-  padding:6px 12px;
-  border-radius:20px;
-  font-weight:600;
-  border: none;
-  color: white;
-}
-
 /* CONTEÚDO */
 .conteudo {
   max-width:100%;
@@ -259,11 +233,6 @@ body {
     background-color: #024f0f; 
 }
 
-.campus { 
-    color:white; 
-    font-weight:700;
-    background-color: #024f0f; 
-}
 
 .data { 
     color:white; 

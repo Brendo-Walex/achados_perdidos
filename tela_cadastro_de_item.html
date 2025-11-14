@@ -16,25 +16,14 @@
         <button onclick="irParateladesolicitacoes()">👁 Ver Solicitações</button>
         <button onclick="irParateladedevolucao()">↩ Ver Devolução</button>
 
-      <div class="user-info">Olá! IFTO <span class="user-circle">👤</span></div>
     </nav>
   </header>
 
   <main>
     <form class="formulario">
       <div class="campo">
-        <label for="nome">Nome</label>
+        <label for="nome">Nome do Item</label>
         <input type="text" id="nome" placeholder="Digite seu nome" />
-      </div>
-
-      <div class="campo">
-        <label for="categoria">Categoria</label>
-        <select id="categoria">
-          <option>Artigos Esportivos</option>
-          <option>Eletrônicos</option>
-          <option>Documentos</option>
-          <option>Outros</option>
-        </select>
       </div>
 
       <div class="campo">
@@ -56,6 +45,15 @@
             <option>Azul</option>
             <option>Branco</option>
             <option>Cinza</option>
+            <option>Outra</option>
+          </select>
+        </div>
+
+        <div class="campo"> 
+          <label for="Situação">Situação do item</label>
+          <select id="Situação">
+            <option>Achado</option>
+            <option>Perdido</option>
           </select>
         </div>
       </div>
@@ -86,8 +84,7 @@
       </div>
 
       <div class="botoes">
-        <button type="submit" class="editar">Editar</button>
-        <button type="button" class="devolver">Cadastrar</button>
+        <button type="button" class="Cadastrar">Cadastrar</button>
       </div>
     </form>
   </main> 

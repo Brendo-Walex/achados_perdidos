@@ -62,10 +62,10 @@ main {
       text-decoration: none;
       
     }
-    #login-btn:hover {
-      background: linear-gradient(90deg, #0f8d24 70%, white 100%);
-      transform: translateY(-2px) scale(1.04);
-    }
+#login-btn:hover {
+
+  background-color: #79cc89;
+}
  
 
 div{

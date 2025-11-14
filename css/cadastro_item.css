@@ -50,14 +50,6 @@ nav button:hover {
   
 }
 
-.user-info {
-  margin-left: auto;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
 main {
   background-color: #024f0f;
   padding: 20px;
@@ -123,15 +115,13 @@ main {
 }
 
 .botoes {
-  display: flex;
   gap: 10px;
   justify-content: flex-end;
   margin-top: 20px;
-  
-  
+    
 }
 
-.editar {
+.Cadastrar {
   background-color: #0f8d24;
   color: white;
   padding: 10px 18px;
@@ -139,19 +129,7 @@ main {
   border: 2px solid white;
 }
 
-.devolver {
-  background-color: #0f8d24;
-  color: white;
-  padding: 10px 18px;
-  border-radius: 5px;
-  border: 2px solid white;
-}
-
-.editar:hover {
-  background-color: #79cc89;
-}
-
-.devolver:hover {
+.Cadastrar:hover {
   background-color: #79cc89;
 }
 img {
