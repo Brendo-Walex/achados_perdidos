@@ -7,6 +7,6 @@ $banco    = "achados_perdidos";
 $conn = mysqli_connect($servidor, $usuario, $senha, $banco);
 
 if (!$conn) {
-    die("Falha na conexão: " . mysqli_connect_error());
+    die("Erro ao conectar: " . mysqli_connect_error());
 }
 ?>
