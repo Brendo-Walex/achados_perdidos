@@ -1,38 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tela de Login</title>
-  <link rel="stylesheet" href="css/tela_login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="css/tela_login.css">
 </head>
 <body>
+
     <!-- Cabeçalho com logo -->
-  <header class="site-header">
-    <div class="logo">
-      <img src="img/logo.png" alt="Logo do site">
-      <span>Achou? Achei!.com</span>
+    <header class="site-header">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo do site">
+            <span>Achou? Achei!.com</span>
+        </div>
+    </header>
+
+    <div class="login-container">
+        <h2>Login</h2>
+
+        <!-- FORMULÁRIO CORRIGIDO -->
+        <form action="logar.php" method="post">
+
+            <label for="login">Usuário</label>
+            <input type="text" id="login" name="login" placeholder="Digite seu usuário" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+
     </div>
-  </header>
-  <div class="login-container">
-    <h2>Login</h2>
-    
 
-    <form action="#" method="post">
-      <label for="username">Usuário</label>
-      <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
-
-      <label for="password">Senha</label>
-      <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
-
-  <button onclick="irParateladecadastro()">Entrar</button>
-
-
-    </form>
-   <script>
-    function irParateladecadastro() {
-    window.location.href = "tela_cadastro_de_item.html";
-  }
-  </script>
 </body>
 </html>

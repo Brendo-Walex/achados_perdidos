@@ -8,6 +8,16 @@ CREATE TABLE usuarios (
     senha VARCHAR(255) NOT NULL
 );
 
+INSERT INTO usuarios (login, senha)
+VALUES ('admin', '$2y$10$kFFG5eOAP9r5QvM7IhOPIeXZ5RzTjYN5SiYDkOjLH5DnJdPUyFQyG');
+
+UPDATE usuarios
+SET senha = '$2y$10$927L6CKsDpBc/WKryXH6GOc29befUNF0mSCTdzvC.OPZl/F/1U3W.'
+WHERE login = 'admin';
+
+
+
+
 -- Tabela de itens encontrados
 CREATE TABLE itens (
     id_item INT AUTO_INCREMENT PRIMARY KEY,
@@ -49,6 +59,4 @@ CREATE TABLE devolucoes (
     data_devolucao DATE DEFAULT (CURRENT_DATE),
     FOREIGN KEY (id_item) REFERENCES itens(id_item)
 );
-INSERT INTO usuarios (login, senha)
-VALUES ('admin', '123456');
 
