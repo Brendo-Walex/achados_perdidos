@@ -1,64 +1,5 @@
+@import url(header.css);
 @import url(Responsivo.css);
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: rgb(166, 235, 166);
-  color: white;
-  h3{
-    background-color: #024f0f;
-  }
-  h2{
-    background-color: #024f0f;
-  }
-  p{
-    background-color: #024f0f;
-  }
-
-  strong{
-    background-color: #024f0f;
-  }
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f1f1f1;
-  color: white;
-}
-
-header {
-background-color: rgb(166, 235, 166);
-  padding: 10px 30px;
-  border-bottom: 1px solid #ccc;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav h1 {
-  font-size: 24px;
-}
-
-
-main {
-  display: flex;
-  justify-content: center;
-  padding: 40px 20px;
-  background-color: rgb(166, 235, 166);
-}
-
-.formulario-container {
-  background-color: #024f0f;
-  padding: 30px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 100%;
-}
-
 .item-encontrado {
   display: flex;
   gap: 20px;
@@ -108,9 +49,87 @@ form button:hover {
   background-color: #79cc89;
 }
 
-img {
-    
-    border-radius: 8%;
-    max-width:40%;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: rgb(166, 235, 166);
+  color: white;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(166, 235, 166);
+}
+
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+
+}
+
+nav button {
+  color: white;
+  background-color: #024f0f;
+  border: 2px solid white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+
   
+}
+
+nav button:hover {
+  background-color: #dbe3eb;
+  
+}
+
+main {
+  background-color: #024f0f;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid white;
+  max-width: 100%;
+  margin: 0 auto;
+
+  
+}
+
+img {
+  position: relative;
+  max-width: 15%;
+}
+div{
+h1 {
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right,#024f0f, white);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 70px;
+    letter-spacing: 2px;
+    margin-top: -12%;
+    font-weight: bold;
+
+} 
+}  
+
+
+.tagline {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-style: italic;
+
 }

@@ -1,39 +1,94 @@
+@import url(header.css);
 @import url(Responsivo.css);
+
+.busca-area{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:#024f0f;
+  padding:10px;
+  border-radius:6px;
+  margin-bottom:15px;
+  max-width: 80%;
+}
+
+.busca-esquerda{
+  flex:1;
+  display:flex;
+  gap:10px;
+}
+
+select, #campoBusca{
+  padding:8px;
+  border-radius:6px;
+  border:1px solid #bfcfd2;
+}
+
+#campoBusca{
+  flex:1;
+}
+
+.btn-busca{
+  background:#2bc36b;
+  padding:8px 12px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:700;
+  max-width: 20%;
+}
+
+.cartao{
+  display:flex;
+  gap:12px;
+  background:#79cc89;
+  padding:12px;
+  border-radius:8px;
+  border:1px solid white;
+}
+
+.cartao-left{
+  width:120px;
+  height:90px;
+  object-fit:cover;
+  border-radius:6px;
+  img{
+  position: relative;
+  max-width: 100%;
+  }
+}
+
+
+
 * {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(166, 235, 166);
-  color:white;
+  color: white;
+  padding: 20px;
 }
 
-main.conteudo{
-   background-color: rgb(166, 235, 166);
-  }
-/*CONTEÚDO PRINCIPAL*/
-.conteudo {
-  width:92%;
-  max-width:100%;
-  margin:20px auto;
-  
+header {
+  display: flex;
+  flex-direction: column;
+  border-bottom:2px solid #dfe5e8;
+  background-color: rgb(166, 235, 166);
 }
 
-/* BOTÕES DE AÇÃO*/
-.acoes {  
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   align-items: center;
-  display:flex;
-  gap:10px;
-  margin-bottom:15px;
-  flex-wrap:wrap;
-  background-color: rgb(166, 235, 166);
-  
 }
 
-.btn {
+nav button {
   color: white;
   background-color: #024f0f;
   border: 2px solid white;
@@ -41,101 +96,25 @@ main.conteudo{
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
-}
-
-/* PAINEL DE BUSCA*/
-.painel-busca {
-  background:#024f0f;
-  padding:14px;
-  border-radius:6px;
-  margin-bottom:18px;
-
-}
-.linha-filtros {
-  display:flex;
-  gap:10px;
-}
-select {
-  padding:8px;
-  border-radius:6px;
-  border:1px solid #ccc;
-  font-weight:600;
-  background-color: white;
-}
-.search {
-  flex:1;
-  display:flex;
-  background-color: #024f0f;
-}
-.search input {
-  flex:1;
-  padding:8px;
-  border:1px solid #ccc;
-  border-right:none;
-  border-radius:6px 0 0 6px;
-  background-color: white;
-}
-.btn-pesquisar {
-  padding:8px 12px;
-  border:1px solid #ccc;
-  border-radius:0 6px 6px 0;
-  background:#22b86b;
-  color:#fff;
-  cursor:pointer;
-  font-weight:700;
-}
-.campus-info {
-  margin-top:10px;
-  font-weight:600;
-  color:white;
-  background-color: linear-gradient(135deg, #bde8c2, #0f8d24);
   
 }
 
-/* LISTA DE DEVOLUÇÕES*/
-.lista {
-  display:flex;
-  flex-direction:column;
-  gap:16px;
-  background-color: linear-gradient(135deg, #bde8c2, #0f8d24);
-}
-.cartao {
-  background:#024f0f;
-  border:1px solid #ddd;
-  border-radius:10px;
-  padding:14px;
-  display:flex;
-  gap:14px;
-  background-color: linear-gradient(135deg, #bde8c2, #0f8d24);
-
+nav button:hover {
+  background-color: #dbe3eb;
+  
 }
 
-.titulo-item {
-  font-size:18px;
-  font-weight:800;
-  margin-top:6px;
-  color:white;
-  background-color: linear-gradient(135deg, #bde8c2, #0f8d24);
-}
-.campus {
-  font-weight:700;
-  color:white;
-  background-color: linear-gradient(135deg, #bde8c2, #0f8d24);
-}
-.data-destaque {
-  color:white;
-  font-weight:700;
-  background-color: linear-gradient(135deg, #bde8c2, #0f8d24);
-}
-
-
-
-div.cartao-left{
-  max-width: 58%;  
+main {
+  background-color: #024f0f;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid white;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 img {
-  margin-left: 5%;
+  position: relative;
   max-width: 15%;
 }
 div{
@@ -149,7 +128,6 @@ h1 {
     letter-spacing: 2px;
     margin-top: -12%;
     font-weight: bold;
-    margin-left: 30%;
 
 } 
 }  
@@ -161,5 +139,4 @@ h1 {
     color: #FFFFFF;
     font-style: italic;
     margin-top: 10px; /* Distância entre o título e a frase */
-    margin-left: 35%;
 }
