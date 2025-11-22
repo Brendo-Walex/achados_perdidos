@@ -3,9 +3,6 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  h1{
-    background-color: rgb(166, 235, 166);
-  }
 }
 
 body {
@@ -13,42 +10,6 @@ body {
   background-color: rgb(166, 235, 166);
   color:white;
 }
-
-/*CABEÇALHO (TOPO)*/
-.topo {
-  background-color: rgb(166, 235, 166);
-  border-bottom:1px solid #ddd;
-  padding:14px 0;
-}
-
-.topo-inner {
-  width:92%;
-  max-width:1100px;
-  margin:auto;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  background-color: rgb(166, 235, 166);
-}
-
-.marca {
-  display:flex;
-  align-items:center;
-  gap:8px;
-  font-weight:700;
-  font-size:18px;
-}
-
-.nav-principal {
-  display:flex; gap:20px;
-}
-
-.nav-principal a {
-  text-decoration:none;
-  font-weight:600;
-  color:#2a4452;
-}
-
 
 main.conteudo{
    background-color: rgb(166, 235, 166);
@@ -62,31 +23,24 @@ main.conteudo{
 }
 
 /* BOTÕES DE AÇÃO*/
-.acoes {
+.acoes {  
+  align-items: center;
   display:flex;
   gap:10px;
   margin-bottom:15px;
   flex-wrap:wrap;
   background-color: rgb(166, 235, 166);
+  
 }
 
 .btn {
-  padding:10px 14px;
-  border-radius:8px;
-  font-weight:700;
-  cursor:pointer;
-}
-
-.btn-outline {
-  background:#024f0f;
-  border:1px solid #ccc;
   color: white;
-}
-
-.btn-principal {
-  background:#0f2740;
-  color:#fff;
-  border:none;
+  background-color: #024f0f;
+  border: 2px solid white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 /* PAINEL DE BUSCA*/
@@ -174,11 +128,38 @@ select {
   background-color: linear-gradient(135deg, #bde8c2, #0f8d24);
 }
 
-img {
-    border-radius: 6%;
-    max-width: 30%;
-}
+
+
 div.cartao-left{
-  max-width: 58%;
-  
+  max-width: 58%;  
+}
+
+img {
+  margin-left: 5%;
+  max-width: 15%;
+}
+div{
+h1 {
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right,#024f0f, white);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 70px;
+    letter-spacing: 2px;
+    margin-top: -12%;
+    font-weight: bold;
+    margin-left: 30%;
+
+} 
+}  
+
+
+.tagline {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-style: italic;
+    margin-top: 10px; /* Distância entre o título e a frase */
+    margin-left: 35%;
 }
