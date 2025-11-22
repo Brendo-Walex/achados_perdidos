@@ -21,6 +21,10 @@
       <button class="btn btn-borda" id="btn-devolucao">↩ Ver Devolução</button>
     </section>
   <main class="conteudo">
+    <div id="notification" style="display:none;position:fixed;top:16px;right:16px;background:#e6ffed;border:1px solid #b7f2c9;padding:12px 16px;border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,.06);z-index:999">
+      <strong id="notif-title">Sucesso</strong>
+      <div id="notif-message" style="margin-top:6px"></div>
+    </div>
     <!-- Botões principais -->
     
 
@@ -88,6 +92,21 @@
         <button type="button" class="editar">Editar</button>
 
   </main>
+  <script>
+    // Exibe notificação quando existe ?success=1 na URL
+    (function(){
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('success') === '1'){
+        const nome = params.get('nome') ? decodeURIComponent(params.get('nome')) : '';
+        const box = document.getElementById('notification');
+        const msg = document.getElementById('notif-message');
+        msg.textContent = nome ? `Item "${nome}" cadastrado com sucesso!` : 'Item cadastrado com sucesso!';
+        box.style.display = 'block';
+        // Desaparece após 5 segundos
+        setTimeout(()=>{box.style.opacity=1;box.style.transition='opacity .6s';setTimeout(()=>box.style.opacity=0,4400);},50);
+      }
+    })();
+  </script>
 
 </body>
 </html>
