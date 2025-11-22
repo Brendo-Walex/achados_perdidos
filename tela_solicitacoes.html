@@ -7,41 +7,42 @@
   <link rel="stylesheet" href="css/tela_solicitacoes.css" />
 </head>
 <body>
-  <!-- TOPO -->
-  <header class="topo">
-    <div class="topo-inner">
-      <div class="marca">
-        <h1> <img src="img/logo.png" alt="logo"> Achou?achei.com</h1>
-      </div>
+  <header>
+ <img src="img/logo.png" alt="logo">
+    <div>
+    <h1>Achou?achei.com</h1>
+    <br>
+    <p class="tagline">"Porque perder algo é fácil, mas recuperar também pode ser"</p>
     </div>
+    <nav>
+        <button onclick="irParateladelistasitens()">+ Cadastrar Item</button>
+        <button onclick="irParateladesolicitacoes()">☰ Lista Itens</button>
+        <button onclick="irParateladedevolucao()">↩ Ver Devolução</button>
+
+    </nav>
   </header>
 
-  <main class="conteudo">
-    <!-- BOTOES AÇÕES -->
-    <section class="acoes">
-      <button class="btn btn-outline">+ Cadastrar Item</button>
-      <button class="btn btn-outline">☰ Lista Itens</button>
-      <button class="btn btn-outline">↩ Ver Devolução</button>
-    </section>
-
-    <!-- PAINEL DE BUSCA / FILTROS -->
-    <section class="painel-busca">
-      <div class="linha-filtros">
-        <select id="filtro">
-          <option>Todos</option>
-          <option>Achados</option>
-          <option>Perdidos</option>
-
-        </select>
-
-        <div class="search">
-          <input type="search" placeholder="Pesquise um item aqui" />
-          <button class="btn-pesquisar" aria-label="Pesquisar">🔍</button>
+     <main class="conteudo">
+    <div id="notification" style="display:none;position:fixed;top:16px;right:16px;background:#e6ffed;border:1px solid #b7f2c9;padding:12px 16px;border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,.06);z-index:999">
+      <strong id="notif-title">Sucesso</strong>
+      <div id="notif-message" style="margin-top:6px"></div>
+    </div>
+ 
+    <section class="busca-area">
+      <div class="busca-esquerda">
+        <div class="select">
+          <select id="filtrosituacao">
+            <option value="todos">Todos</option>
+            <option value="achados">Achados</option>
+            <option value="perdidos">Perdidos</option>
+          </select>
         </div>
+        <input id="campoBusca" type="search" placeholder="Pesquise um item aqui" />
       </div>
-
-      <div class="campus-info">Solicitações em IFTO Campus - Colinas</div>
+      <button id="btnBuscar" class="btn-busca">🔎</button>
     </section>
+
+    <p class="resultadodapesquisa">Solicitações em IFTO Campus - Colinas</p>
 
     <!-- LISTA / CARTÃO -->
     <section class="lista">
