@@ -6,26 +6,26 @@
   <title>Cadastro de Item</title>
   <link rel="stylesheet" href="css/css-reset.css">
   <link rel="stylesheet" href="css/cadastro_item.css"/>
-  <link rel="stylesheet" href="js/cadastro_item.js">
 </head>
 <body>
   <header>
- <img src="img/logo.png" alt="logo">
+    <img src="img/logo.png" alt="logo">
     <div>
-    <h1>Achou?achei.com</h1>
-    <br>
-    <p class="tagline">"Porque perder algo é fácil, mas recuperar também pode ser"</p>
+      <h1>Achou?achei.com</h1>
+      <br>
+      <p class="tagline">"Porque perder algo é fácil, mas recuperar também pode ser"</p>
     </div>
-    <nav>
-        <button onclick="irParateladelistasitens()">☰ Lista Itens</button>
-        <button onclick="irParateladesolicitacoes()">👁 Ver Solicitações</button>
-        <button onclick="irParateladedevolucao()">↩ Ver Devolução</button>
 
+    <nav>
+      <button onclick="irParateladelistasitens()">☰ Lista Itens</button>
+      <button onclick="irParateladesolicitacoes()">👁 Ver Solicitações</button>
+      <button onclick="irParateladedevolucao()">↩ Ver Devolução</button>
     </nav>
   </header>
 
   <main>
     <form class="formulario" action="cadastrar_item.php" method="post" enctype="multipart/form-data">
+
       <div class="campo">
         <label for="nome">Nome do Item</label>
         <input type="text" id="nome" name="nome" placeholder="Digite o nome do item" required />
@@ -39,7 +39,7 @@
       <div class="imagem-cor">
         <div class="campo">
           <label for="imagem">Foto do Item</label>
-          <input type="file" id="imagem" name="imagem" accept="image/*" />
+          <input type="file" id="imagem" name="imagem" accept="image/*" required />
         </div>
 
         <div class="campo">
@@ -57,14 +57,15 @@
         <div class="campo"> 
           <label for="situacao">Situação do item</label>
           <select id="situacao" name="situacao">
-            <option>Achado</option>
-            <option>Perdido</option>
+            <option value="achado">Achado</option>
+            <option value="perdido">Perdido</option>
           </select>
         </div>
       </div>
 
+      <!-- PREVIEW DA IMAGEM -->
       <div class="imagem-preview">
-        <img src="img/mochila_preta.webp" alt="Prévia da imagem" />
+        <img id="preview-img" style="display:none; width:180px; border-radius:10px;">
       </div>
 
       <div class="campo-duplo">
@@ -79,8 +80,8 @@
       </div>
 
       <div class="campo">
-        <label for="pergunta">Faça uma pergunta específica para o item (opcional)</label>
-        <input type="text" id="pergunta" name="pergunta" placeholder="Ex: Qual o papel de parede do telefone?" />
+        <label for="pergunta">Pergunta específica (opcional)</label>
+        <input type="text" id="pergunta" name="pergunta" />
       </div>
 
       <div class="campo">
@@ -89,20 +90,30 @@
       </div>
 
       <div class="botoes">
-        <button type="submit" class="Cadastrar">salvar</button>
+        <button type="submit" class="Cadastrar">Salvar</button>
       </div>
+
     </form>
-  </main> 
-   <script>
-    function irParateladelistasitens() {
-    window.location.href = "tela_listagem_de_itens.html";
+  </main>
+
+<script>
+
+document.getElementById("imagem").addEventListener("change", function() {
+  const preview = document.getElementById("preview-img");
+  const file = this.files[0];
+
+  if (file) {
+    preview.src = URL.createObjectURL(file);
+    preview.style.display = "block";
   }
-   function irParateladesolicitacoes() {
-    window.location.href = "tela_solicitacoes.html";
-  }
-   function irParateladedevolucao() {
-    window.location.href = "tela_devolucao.html";
-  }
-  </script>
+});
+
+// Botões do menu
+function irParateladelistasitens() { window.location.href = "tela_inicial.php"; }
+function irParateladesolicitacoes() { window.location.href = "tela_solicitacoes.php"; }
+function irParateladedevolucao() { window.location.href = "tela_devolucao.php"; }
+
+</script>
+
 </body>
 </html>

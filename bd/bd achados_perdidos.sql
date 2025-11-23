@@ -31,6 +31,13 @@ CREATE TABLE itens (
     pergunta_especifica VARCHAR(300),
     nome_de_quem_achou VARCHAR(150)
 );
+ALTER TABLE itens 
+ADD descricao_curta VARCHAR(255) AFTER nome,
+ADD status ENUM('achado','perdido') AFTER descricao;
+
+ALTER TABLE itens DROP COLUMN status;
+
+
 
 -- Tabela de solicitações de devolução/reivindicação
 CREATE TABLE solicitacoes (
