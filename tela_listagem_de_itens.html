@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>listagem de itens</title>
   <link rel="stylesheet" href="css/tela_listagem_de_itens.css" />
-  <link rel="stylesheet" href="js/listagem_itens.js">
 </head>
 <body>
   <header>
@@ -50,66 +49,10 @@
 
     <!-- Lista de cartões -->
     <section id="gradeItens" class="grade">
-      <!-- Item 1 -->
-      <article class="cartao" data-titulo="Carteira" data-categoria="carteira">
-        <div class="cartao-esquerda">
-          <img src="img/carteira_marrom.webp" alt="Carteira" />
-        </div>
-        <div class="cartao-direita">
-          <h3>Carteira</h3>
-          <p>No dia <strong>25 de Setembro</strong></p>
-          <p>Código <strong>123</strong></p>
-          <p class="guardado">Guardado há <strong>08 dias</strong></p>
-        </div>
-      </article>
-
-      <!-- Item 2 -->
-      <article class="cartao" data-titulo="Óculos" data-categoria="óculos">
-        <div class="cartao-esquerda">
-          <img src="img/Óculos_grau.webp" alt="Óculos" />
-        </div>
-        <div class="cartao-direita">
-          <h3>Óculos </h3>
-          <p>No dia <strong>26 de Setembro</strong></p>
-          <p>Código <strong>12</strong></p>
-          <p class="guardado">Guardado há <strong>07 dias</strong></p>
-        </div>
-      </article>
-
-      <!-- Item 3 -->
-      <article class="cartao" data-titulo="Chaveiro" data-categoria="chaveiro">
-        <div class="cartao-esquerda">
-          <img src="img/chaveiro_azul.jpg" alt="Chaveiro" />
-        </div>
-        <div class="cartao-direita">
-          <h3>Chaveiro</h3>
-          <p>No dia <strong>27 de Setembro</strong></p>
-          <p>Código <strong>23</strong></p>
-          <p class="guardado">Guardado há <strong>06 dias</strong></p>
-        </div>
-      </article>
+      <p style="grid-column:1/-1;text-align:center;color:#666">Carregando itens...</p>
     </section>
-    <br>
-      <div class="botoes">
-        <button type="button" class="apagar">Apagar</button>
-        <button type="button" class="editar">Editar</button>
 
   </main>
-  <script>
-    // Exibe notificação quando existe ?success=1 na URL
-    (function(){
-      const params = new URLSearchParams(window.location.search);
-      if (params.get('success') === '1'){
-        const nome = params.get('nome') ? decodeURIComponent(params.get('nome')) : '';
-        const box = document.getElementById('notification');
-        const msg = document.getElementById('notif-message');
-        msg.textContent = nome ? `Item "${nome}" cadastrado com sucesso!` : 'Item cadastrado com sucesso!';
-        box.style.display = 'block';
-        // Desaparece após 5 segundos
-        setTimeout(()=>{box.style.opacity=1;box.style.transition='opacity .6s';setTimeout(()=>box.style.opacity=0,4400);},50);
-      }
-    })();
-  </script>
-
+  <script src="js/listar_itens.js"></script>
 </body>
 </html>

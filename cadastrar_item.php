@@ -55,6 +55,11 @@ if (isset($_FILES['imagem']) && $_FILES['imagem']['error'] !== UPLOAD_ERR_NO_FIL
     $foto_path = 'uploads/' . $safeName;
 }
 
+// Validar campos obrigatórios
+if (empty($nome)) {
+    die('Erro: Nome do item é obrigatório.');
+}
+
 // Inserir no banco usando prepared statement
 $sql = "INSERT INTO itens (nome, descricao, situacao, cor_predominante, foto, data_encontrado, horario_aproximado, pergunta_especifica, nome_de_quem_achou) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 $stmt = mysqli_prepare($conn, $sql);
@@ -62,6 +67,7 @@ if (!$stmt) {
     die('Erro na preparação da query: ' . mysqli_error($conn));
 }
 
+// Bind com os tipos corretos
 mysqli_stmt_bind_param($stmt, 'sssssssss', $nome, $descricao, $situacao, $cor, $foto_path, $data, $hora, $pergunta, $achador);
 
 $exec = mysqli_stmt_execute($stmt);
@@ -69,6 +75,7 @@ if (!$exec) {
     die('Erro ao inserir item: ' . mysqli_stmt_error($stmt));
 }
 
+$itemId = mysqli_insert_id($conn);
 mysqli_stmt_close($stmt);
 
 // Mostra mensagem de sucesso com dados do item e redireciona para a listagem (com flag)
