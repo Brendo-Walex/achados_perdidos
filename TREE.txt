@@ -1,0 +1,61 @@
+Árvore do projeto - achados_perdidos
+
+docker-compose.yml
+Dockerfile
+
+app/
+  Config/
+    conexao.php
+  Controllers/
+    cadastrar.php
+    logar.php
+    logout.php
+    processa_reivindicacao.php
+    restricao.php
+  Models/
+    cadastrar_item.php
+    gerar_hash.php
+    listar_itens.php
+  Views/
+    auth/
+      tela_cadastro_de_item.php
+      tela_cadastro_login.php
+      tela_devolucao.php
+      tela_listagem_de_itens.php
+      tela_login.php
+    claims/
+      listar_solicitacoes.php
+      tela_formulario_de_devolucao.php
+      tela_solicitacoes.php
+    items/
+      reivindicar.php
+
+bd/
+  init.sql
+
+public/
+  index.php
+  css/
+    cadastro_item.css
+    css-reset.css
+    header.css
+    Responsivo.css
+    tela_devolucao.css
+    tela_formulario_de_devolucao.css
+    tela_formulario_para_reividicar.css
+    tela_inicial.css
+    tela_listagem_de_itens.css
+    tela_login.css
+    tela_solicitacoes.css
+    titulo.css
+  img/  (imagens)
+  js/
+    cadastro_item.js
+    listagem_itens.js
+    listar_itens.js
+    listar_solicitacoes.js
+  uploads/  (arquivos enviados)
+
+src/
+  teste_api.html
+  teste_conexao.php

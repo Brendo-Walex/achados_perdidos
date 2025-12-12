@@ -1,0 +1,246 @@
+/* ======================================= */
+/* Estilos Gerais              */
+/* ======================================= */
+@import url(css-reset.css);
+/* Importar uma fonte mais moderna do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    /* Aplicar a fonte Poppins como principal */
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Cor de fundo mais neutra e suave */
+    background-color: #f8f9fa; 
+    line-height: 1.6;
+}
+
+/* Links em geral */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ======================================= */
+/* HEADER (Topo)             */
+/* ======================================= */
+header {
+    background-color: #ffffff; /* Fundo branco para leveza */
+    border-bottom: 5px solid #198754; /* Borda inferior verde escuro */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px; /* Preenchimento mais horizontal */
+}
+
+/* Bloco da Logo e Título */
+header > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha o texto à esquerda */
+    margin-right: auto; /* Empurra os elementos para a direita */
+}
+
+/* Ajuste da Logo */
+header img {
+    height: 60px; /* Tamanho da logo */
+    margin-right: 20px;
+}
+
+/* Título Principal */
+header h1:not(:first-child) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Negrito */
+    font-size: 2.2rem; /* Tamanho do título */
+    /* Gradiente moderno verde-escuro para o título */
+    background: linear-gradient(to right, #198754, #28a745); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+/* TAGLINE */
+.tagline {
+    font-size: 0.95rem;
+    color: #6c757d; /* Cor mais suave */
+    font-style: italic;
+    margin-top: 3px;
+    font-weight: 300;
+}
+
+/* MENU DE NAVEGAÇÃO */
+nav ul {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #343a40; /* Cor escura para o texto */
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 5px 0;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav ul li a:hover {
+    color: #198754; /* Mudar para verde no hover */
+    border-bottom: 2px solid #198754;
+}
+
+/* BOTÕES DE LOGIN E CADASTRO */
+#login-btn {
+    position: static; /* Remove a posição absoluta */
+    margin-left: 15px; /* Espaçamento entre os botões */
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px; /* Borda mais arredondada */
+    transition: background-color 0.3s, transform 0.2s;
+    white-space: nowrap; /* Evita quebra de linha */
+}
+
+/* Estilização específica para o primeiro botão (Entrar) */
+header a:nth-of-type(1) {
+    background-color: #6c757d; /* Cinza escuro */
+    color: white;
+}
+
+header a:nth-of-type(1):hover {
+    background-color: #5a6268;
+    transform: translateY(-1px);
+}
+
+/* Estilização para o segundo botão (Criar Conta) */
+header a:nth-of-type(2) {
+    background-color: #28a745; /* Verde primário */
+    color: white;
+}
+
+header a:nth-of-type(2):hover {
+    background-color: #1e7e34;
+    transform: translateY(-1px);
+}
+
+/* ======================================= */
+/* CATÁLOGO (Itens)          */
+/* ======================================= */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 30px; /* Aumenta o espaçamento */
+    background-color: #f8f9fa;
+}
+
+/* CARD DO ITEM */
+.item {
+    width: 300px; /* Aumenta um pouco a largura */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px; /* Borda mais suave */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra mais destacada */
+    transition: all .3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.item:hover {
+    transform: translateY(-5px); /* Efeito de elevação sutil */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* BORDAS POR STATUS */
+.status-achado {
+    border-left: 5px solid #28a745; /* Verde para Achado */
+}
+
+.status-perdido {
+    border-left: 5px solid #dc3545; /* Vermelho para Perdido */
+}
+
+/* TÍTULO DO ITEM */
+.item h3 {
+    font-size: 1.15rem;
+    margin: 5px 0 10px;
+    color: #343a40;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* IMAGEM DO ITEM */
+.item img {
+    width: 100%;
+    height: 200px; /* Altura fixa para uniformidade */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* DESCRIÇÃO */
+.item p {
+    color: #6c757d;
+    font-size: 0.9rem;
+    flex-grow: 1; /* Garante que a descrição ocupe o espaço */
+    margin-top: auto; /* Alinha no final do card */
+}
+
+/* Media Queries (Responsividade) - Adicione em um arquivo Responsivo.css dedicado ou aqui. */
+/* Exemplo Básico */
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    /* Oculta a logo/h1 para economizar espaço em telas menores, se não for essencial */
+    header img, header h1:first-child {
+        display: none; 
+    }
+
+    /* Centraliza o novo bloco de título */
+    header > div:nth-child(2) {
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        gap: 15px;
+        margin: 10px 0;
+        padding-top: 0;
+    }
+
+    /* Ajuste na disposição dos botões */
+    .button-group {
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    #login-btn {
+        margin-left: 0;
+    }
+
+    .catalogo {
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .item {
+        width: 100%; /* Ocupa toda a largura em telas muito pequenas */
+        max-width: 300px; /* Mas com um limite */
+    }
+}

@@ -1,0 +1,249 @@
+/* ======================================= */
+/* Estilos Globais e Reset                 */
+/* ======================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    background-color: #f0fdf6; /* Fundo muito levemente esverdeado */
+    color: #343a40;
+    line-height: 1.6;
+}
+
+/* Base para botões e links */
+.btn {
+    padding: 10px 15px;
+    border-radius: 8px; /* Mais arredondado */
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: none;
+    white-space: nowrap;
+}
+
+/* ======================================= */
+/* HEADER (Manutenção do Padrão)           */
+/* ======================================= */
+
+header {
+    background-color: #ffffff;
+    border-bottom: 5px solid #198754; /* Borda mais grossa */
+    padding: 15px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Sombra mais sutil */
+}
+
+.header-content-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo-area { display: flex; align-items: center; gap: 15px; }
+.logo-area img { max-width: 55px; } /* Levemente maior */
+.logo-area h1 { 
+    font-size: 1.8rem; font-weight: 700;
+    background: linear-gradient(to right, #198754, #28a745);
+    -webkit-background-clip: text; background-clip: text; color: transparent; margin: 0;
+}
+.tagline { font-size: 0.8rem; color: #6c757d; font-style: italic; margin-top: 0; }
+
+.user-status { display: flex; align-items: center; gap: 15px; }
+.user-info { font-size: 1rem; color: #495057; font-weight: 500; }
+
+/* Botões do Menu Principal */
+.main-nav {
+    display: flex; gap: 12px; padding-top: 10px; border-top: 1px solid #e9ecef;
+}
+.btn-action { background-color: #20c997; /* Verde Aqua para ação suave */ color: white; padding: 10px 18px; }
+.btn-action:hover { background-color: #1aae82; transform: translateY(-1px); }
+.btn-action.current { background-color: #198754; } /* Verde escuro para o ativo */
+
+/* ======================================= */
+/* MAIN / CONTEÚDO                         */
+/* ======================================= */
+.conteudo {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Busca e Filtros */
+.busca-area {
+    display: flex; align-items: center; gap: 15px; background: #ffffff;
+    padding: 20px; border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+.busca-esquerda { flex: 1; display: flex; gap: 10px; }
+.select-filtro, .input-busca {
+    padding: 12px; border-radius: 8px; border: 1px solid #ced4da; font-size: 1rem;
+}
+.btn-busca { background: #007bff; color: white; padding: 12px 25px; }
+.btn-busca:hover { background: #0056b3; }
+
+.resultado-info {
+    color: #198754; font-weight: 600; margin-bottom: 20px; font-size: 1.1rem;
+}
+
+/* ======================================= */
+/* CARTÃO DE SOLICITAÇÃO (Ajustes Finos)   */
+/* ======================================= */
+.lista {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px; /* Mais espaço entre os cartões */
+}
+
+.cartao-solicitacao {
+    display: grid;
+    grid-template-columns: 220px 1fr 220px; /* Ligeiramente mais largo */
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.cartao-solicitacao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Coluna 1: Item Visual */
+.item-visual {
+    background-color: #e6f6f2; /* Fundo suave mais claro */
+    padding: 20px;
+    border-right: 1px solid #dee2e6;
+}
+.item-visual img {
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.item-info h3 {
+    font-size: 1.2rem;
+    color: #198754;
+}
+.item-info p {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+.status-tag {
+    /* Novo estilo de tag: Destaque visual */
+    background-color: #ffc107; /* Amarelo forte para Pendente */
+    color: #343a40;
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: inline-block;
+    /* Remover posição absoluta se quiser usar a tag como bloco */
+    position: static; 
+}
+
+/* Coluna 2: Detalhes da Solicitação */
+.solicitacao-detalhes {
+    padding: 25px;
+}
+.solicitacao-detalhes h4 {
+    font-size: 1.15rem;
+    color: #343a40;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f1f1f1;
+    font-weight: 600;
+}
+.solicitante-dados p {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    color: #495057;
+}
+
+/* Validação */
+.pergunta-titulo { 
+    margin-top: 20px !important; 
+    color: #007bff !important; /* Azul para destaque da pergunta de validação */
+    border-bottom: 2px solid #e9ecef !important;
+}
+.pergunta { font-style: italic; color: #6c757d; }
+.resposta { 
+    background-color: #f8f9fa; 
+    padding: 12px; 
+    border-left: 4px solid #007bff; 
+    margin-top: 8px; 
+    font-weight: 500;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Coluna 3: Ações (Aprovar/Reprovar) */
+.solicitacao-acoes {
+    background-color: #f8f9fa; /* Fundo mais suave para a área de ação */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 12px;
+    border-left: 1px solid #dee2e6;
+}
+
+.btn-aprovado {
+    background-color: #198754; /* Verde escuro forte para Aprovar */
+    color: white;
+    font-size: 1.05rem;
+    padding: 14px;
+    box-shadow: 0 4px 6px rgba(25, 135, 84, 0.2);
+}
+.btn-aprovado:hover { background-color: #136a46; }
+
+.btn-rejeitado {
+    background-color: #dc3545;
+    color: white;
+    font-size: 1.05rem;
+    padding: 14px;
+    box-shadow: 0 4px 6px rgba(220, 53, 69, 0.2);
+}
+.btn-rejeitado:hover { background-color: #c82333; }
+
+.btn-secundario {
+    background-color: #6c757d;
+    color: white;
+    font-size: 0.9rem;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 992px) {
+    .cartao-solicitacao {
+        grid-template-columns: 1fr; /* Coluna única no mobile */
+    }
+    .item-visual {
+        flex-direction: row;
+        gap: 15px;
+        text-align: left;
+        border-right: none;
+        border-bottom: 1px solid #dee2e6;
+    }
+    .item-visual img { width: 80px; max-height: 80px; }
+    .item-info { align-self: center; }
+
+    .solicitacao-acoes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-left: none;
+        border-top: 1px solid #dee2e6;
+    }
+    /* Faz os botões grandes ocuparem a linha inteira */
+    .btn-aprovado, .btn-rejeitado {
+        width: 100%;
+    }
+}

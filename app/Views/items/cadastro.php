@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Item</title>
+  <link rel="stylesheet" href="css/css-reset.css">
+  <link rel="stylesheet" href="css/cadastro_item.css"/>
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" alt="logo">
+    <div>
+      <h1>Achou?achei.com</h1>
+      <br>
+      <p class="tagline">"Porque perder algo é fácil, mas recuperar também pode ser"</p>
+    </div>
+
+    <nav>
+      <button onclick="irParateladelistasitens()">☰ Lista Itens</button>
+      <button onclick="irParateladesolicitacoes()">👁 Ver Solicitações</button>
+      <button onclick="irParateladedevolucao()">↩ Ver Devolução</button>
+    </nav>
+  </header>
+
+  <main>
+    <form class="formulario" action="index.php?pagina=processa_cadastro_item" method="post" enctype="multipart/form-data">
+
+      <div class="campo">
+        <label for="nome">Nome do Item</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite o nome do item" required />
+      </div>
+
+      <div class="campo">
+        <label for="descricao">Descrição</label>
+        <textarea id="descricao" name="descricao" rows="3"></textarea>
+      </div>
+
+      <div class="imagem-cor">
+        <div class="campo">
+          <label for="imagem">Foto do Item</label>
+          <input type="file" id="imagem" name="imagem" accept="image/*" required />
+        </div>
+
+        <div class="campo">
+          <label for="cor">Cor Predominante</label>
+          <select id="cor" name="cor">
+            <option>Preto</option>
+            <option>Vermelho</option>
+            <option>Azul</option>
+            <option>Branco</option>
+            <option>Cinza</option>
+            <option>Outra</option>
+          </select>
+        </div>
+
+        <div class="campo"> 
+          <label for="situacao">Situação do item</label>
+          <select id="situacao" name="situacao">
+            <option value="achado">Achado</option>
+            <option value="perdido">Perdido</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- PREVIEW DA IMAGEM -->
+      <div class="imagem-preview">
+        <img id="preview-img" style="display:none; width:180px; border-radius:10px;">
+      </div>
+
+      <div class="campo-duplo">
+        <div class="campo">
+          <label for="data">Data</label>
+          <input type="date" id="data" name="data" />
+        </div>
+        <div class="campo">
+          <label for="hora">Horário (aproximadamente)</label>
+          <input type="time" id="hora" name="hora" />
+        </div>
+      </div>
+
+      <div class="campo">
+        <label for="pergunta">Pergunta específica (opcional)</label>
+        <input type="text" id="pergunta" name="pergunta" />
+      </div>
+
+      <div class="campo">
+        <label for="achador">Nome de quem achou</label>
+        <input type="text" id="achador" name="achador" />
+      </div>
+
+      <div class="botoes">
+        <button type="submit" class="Cadastrar">Salvar</button>
+      </div>
+
+    </form>
+  </main>
+
+<script>
+
+document.getElementById("imagem").addEventListener("change", function() {
+  const preview = document.getElementById("preview-img");
+  const file = this.files[0];
+
+  if (file) {
+    preview.src = URL.createObjectURL(file);
+    preview.style.display = "block";
+  }
+});
+
+// Botões do menu
+function irParateladelistasitens() { window.location.href = "index.php?pagina=dashboard"; }
+function irParateladesolicitacoes() { window.location.href = "tela_solicitacoes.php"; }
+function irParateladedevolucao() { window.location.href = "tela_devolucao.php"; }
+
+</script>
+
+</body>
+</html>
